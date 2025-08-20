@@ -1,1 +1,24 @@
-<!-- Poll page HTML placeholder -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Voting App - Vote</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h2>Vote for Your Favorite Person</h2>
+<input id="voterId" placeholder="Enter your voter ID" />
+<div id="candidates"></div>
+<script src="script.js"></script>
+<script>
+const candidates = ["Alice", "Bob", "Charlie", "David", "Eve"];
+const container = document.getElementById('candidates');
+candidates.forEach(p => {
+  const btn = document.createElement('button');
+  btn.innerText = `Vote ${p}`;
+  btn.onclick = () => castVote(document.getElementById('voterId').value, p);
+  container.appendChild(btn);
+});
+</script>
+</body>
+</html>

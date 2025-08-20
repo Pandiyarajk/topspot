@@ -1,2 +1,7 @@
 # Voting App
-This is a static voting app using GitHub JSON backend.
+Static voting app with GitHub JSON backend.
+Pages:
+- index.html → Vote
+- results.html → Show votes per person
+- dashboard.html → Bar chart view
+- clear.html → Clear vote from device
