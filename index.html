@@ -14,10 +14,10 @@
 const candidates = ["Alice", "Bob", "Charlie", "David", "Eve"];
 const container = document.getElementById('candidates');
 candidates.forEach(p => {
-  const btn = document.createElement('button');
-  btn.innerText = `Vote ${p}`;
-  btn.onclick = () => castVote(document.getElementById('voterId').value, p);
-  container.appendChild(btn);
+    const btn = document.createElement('button');
+    btn.innerText = `Vote ${p}`;
+    btn.onclick = () => castVote(document.getElementById('voterId').value, p);
+    container.appendChild(btn);
 });
 </script>
 </body>
